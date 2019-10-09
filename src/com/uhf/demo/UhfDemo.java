@@ -12,18 +12,18 @@ import com.uhf.utils.StringUtils;
 public class UhfDemo {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
-//		int i =  Linkage.getInstance().initial("COM4");// 初始化连接设备,参数：端口号
+		int i =  Linkage.getInstance().initial("COM4");// 初始化连接设备,参数：端口号
 //		 function：init， parameter：The port number
-//		if (i == 0) {
-//			System.out.println("connect success");
-//			setInventoryArea();
-//			getInventoryArea();
-//			startInventory();
-//			stopInventory();
-//			Linkage.getInstance().deinit();
-//		} else {
-//			System.out.println("connect failed");
-//		}
+		if (i == 0) {
+			System.out.println("connect success");
+			setInventoryArea();
+			getInventoryArea();
+			startInventory();
+			stopInventory();
+			Linkage.getInstance().deinit();
+		} else {
+			System.out.println("connect failed");
+		}
 		int j =  Linkage.getInstance().initial("COM4");// 初始化连接设备,参数：端口号
 		if (j == 0) {
 			System.out.println("connect success");
